@@ -37,7 +37,7 @@ templates/: Contém os arquivos HTML para a interface web.
 static/: Contém arquivos CSS e outros recursos estáticos/estilos.
 
 
-Como utilizar
+Como utilizar:
 
 
 Pré-requisitos
@@ -64,9 +64,11 @@ Executando o Chatbot
 
 
 Inicie o servidor Flask no terminal: 
+
 python app.py
 
 Abra o navegador e acesse: 
+
 http://localhost:5000
 
 
