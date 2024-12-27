@@ -35,3 +35,35 @@ chatbot.py: Código da parte lógica do chatbot.
 templates/: Contém os arquivos HTML para a interface web.
 
 static/: Contém arquivos CSS e outros recursos estáticos/estilos.
+
+
+Como utilizar
+
+Pré-requisitos
+Antes de começar, certifique-se de que o seguinte está instalado no seu sistema:
+
+Python (versão 3.x)
+As seguintes bibliotecas Python:
+Flask
+difflib (nativa do Python)
+threading
+
+
+Instalação
+
+Clone o repositório do projeto
+Navegue até o diretório do projeto
+
+Instale manualmente (digitando no terminal) as dependências (caso necessário): pip install flask 
+
+Executando o Chatbot
+
+Inicie o servidor Flask no terminal: python app.py
+Abra o navegador e acesse: http://localhost:5000
+
+
+Usando o Chatbot
+
+Na página inicial, você verá um campo para enviar suas perguntas.
+Digite sua pergunta e clique em "Enviar".
+O chatbot responderá com base no banco de dados(dicionário) de perguntas e respostas configurado no código.
