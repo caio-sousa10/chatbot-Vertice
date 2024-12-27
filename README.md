@@ -18,7 +18,11 @@ Interface web: A aplicação é acessível via navegador, com uma interface simp
 Expansão futura: O sistema está preparado para futuras melhorias, incluindo integração com outras plataformas ou interfaces.
 
 Estrutura do Projeto
-app.py: Código principal do servidor Flask. 
+
+app.py: Código principal do servidor Flask.
+
 chatbot.py: Código da parte lógica do chatbot.
+
 templates/: Contém os arquivos HTML para a interface web.
+
 static/: Contém arquivos CSS e outros recursos estáticos/estilos.
