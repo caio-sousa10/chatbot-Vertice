@@ -39,7 +39,9 @@ static/: Contém arquivos CSS e outros recursos estáticos/estilos.
 
 Como utilizar
 
+
 Pré-requisitos
+
 Antes de começar, certifique-se de que o seguinte está instalado no seu sistema:
 
 Python (versão 3.x)
@@ -51,6 +53,7 @@ threading
 
 Instalação
 
+
 Clone o repositório do projeto
 Navegue até o diretório do projeto
 
@@ -58,6 +61,7 @@ Instale manualmente (digitando no terminal) as dependências (caso necessário):
 pip install flask 
 
 Executando o Chatbot
+
 
 Inicie o servidor Flask no terminal: 
 python app.py
@@ -67,6 +71,7 @@ http://localhost:5000
 
 
 Usando o Chatbot
+
 
 Na página inicial, você verá um campo para enviar suas perguntas.
 Digite sua pergunta e clique em "Enviar".
