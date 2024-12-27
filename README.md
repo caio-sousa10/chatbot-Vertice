@@ -54,12 +54,16 @@ Instalação
 Clone o repositório do projeto
 Navegue até o diretório do projeto
 
-Instale manualmente (digitando no terminal) as dependências (caso necessário): pip install flask 
+Instale manualmente (digitando no terminal) as dependências (caso necessário): 
+pip install flask 
 
 Executando o Chatbot
 
-Inicie o servidor Flask no terminal: python app.py
-Abra o navegador e acesse: http://localhost:5000
+Inicie o servidor Flask no terminal: 
+python app.py
+
+Abra o navegador e acesse: 
+http://localhost:5000
 
 
 Usando o Chatbot
