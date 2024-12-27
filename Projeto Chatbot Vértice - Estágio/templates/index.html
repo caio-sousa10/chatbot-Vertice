@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot Vértice</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="chat-container">
+        <h1>Bem-vindo ao Chatbot da Vértice!</h1>
+        <div id="chat-box">
+            <div id="bot-message"><h2>Perguntas frequentes:</h2>
+                <p>Quais exames vocês realizam?</p>
+                <p>Qual o horário de atendimento?</p> 
+                <p>Onde fica a clínica?</p>
+                <p>Preciso agendar um exame?</p></div>
+        </div>
+        <form id="chat-form">
+            <input type="text" name="message" id="user-input" placeholder="Digite a sua pergunta..." autocomplete="off">
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+    <script>
+        const form = document.getElementById('chat-form');
+        const chatBox = document.getElementById('chat-box');
+
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const userInput = document.getElementById('user-input');
+            const userMessage = userInput.value;
+
+            // Adiciona mensagem do usuário ao chat
+            chatBox.innerHTML += `<div class="user-message">${userMessage}</div>`;
+            userInput.value = '';
+
+            // Envia a mensagem para o servidor e exibe a resposta
+            const response = await fetch('/get_response', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+                body: `message=${encodeURIComponent(userMessage)}`
+            });
+            const botResponse = await response.text();
+            chatBox.innerHTML += `<div class="bot-message">${botResponse}</div>`;
+        });
+    </script>
+</body>
+</html>
